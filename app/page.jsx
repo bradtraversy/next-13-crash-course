@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import LoadingPage from './loading';
-import Courses from './componets/Courses';
+import Courses from "./components/Courses";
 import CourseSearch from './componets/CourseSearch';
 
 const HomePage = () => {
@@ -26,7 +26,7 @@ const HomePage = () => {
 
   return (
     <>
-      <h1>Welcome To Traversy Meida</h1>
+      <h1>Welcome To Traversy Media</h1>
       <CourseSearch getSearchResults={(results) => setCourses(results)} />
       <Courses courses={courses} />
     </>
